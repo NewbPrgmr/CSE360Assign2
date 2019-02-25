@@ -5,8 +5,11 @@ package cse360assign2;
  * and produces the result of the operation with given numerical data.
  * The operation includes addition, subtraction, multiplication, and division. 
  * @author jb6055
- * @version 3.0
+ * @version 3.1
  * @since 2/24/2019
+ * Class ID: 423
+ * Repository URL: https://github.com/NewbPrgmr/CSE360Assign2.git
+ * Used GitHub for this assignment.
  */
 
 public class Calculator {
@@ -79,12 +82,12 @@ public class Calculator {
 		if (value == 0)
 		{
 			total = 0;
-			history += " / " + value;
 		}
 		else
 		{
 			total /= value;
 		}
+		history += " / " + value;
 	}
 	
 	/**
