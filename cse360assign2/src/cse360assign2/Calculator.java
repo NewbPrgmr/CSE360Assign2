@@ -30,7 +30,7 @@ private int total;
 	 * @param value This is the integer value to be added to the total.
 	 */
 	public void add (int value) {
-		
+		total += value;
 	}
 	
 	/**
@@ -38,7 +38,7 @@ private int total;
 	 * @param value This is the integer value to be subtracted from the total.
 	 */
 	public void subtract (int value) {
-		
+		total -= value;
 	}
 	
 	/**
@@ -46,7 +46,7 @@ private int total;
 	 * @param value The total will be multiplied by this value.
 	 */
 	public void multiply (int value) {
-		
+		total *= value;
 	}
 	
 	/**
@@ -54,7 +54,14 @@ private int total;
 	 * @param value The total will be divided by this value.
 	 */
 	public void divide (int value) {
-		
+		if (value == 0)
+		{
+			total = 0;
+		}
+		else
+		{
+			total /= value;
+		}
 	}
 	
 	/**
